@@ -2,6 +2,11 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
+const openBrowsers = require('open-browsers');
+// decide what os should be used
+// possible node values 'darwin', 'freebsd', 'linux', 'sunos' or 'win32'
+// const platform = process.platform;
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -15,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('extension.uiwDocument', () => {
 		// The code you place here will be executed every time your command is executed
-
+		openBrowsers('https://uiwjs.github.io/');
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World!');
 	});
