@@ -1,7 +1,7 @@
 {
 	"name": "vscode-uiw",
 	"displayName": "",
-	"description": "vcode uiw",
+	"description": "Preview uiw document in vscode.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.31.0"
@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.uiwDocument"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.uiwDocument",
+				"title": "uiw document."
 			}
 		]
 	},
