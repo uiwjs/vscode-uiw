@@ -1,15 +1,27 @@
 {
-	"name": "vscode-uiw",
+	"name": "uiw",
 	"displayName": "uiw document",
+	"publisher": "jaywcjlove",
+	"icon": "images/icon.png",
 	"description": "Preview uiw document in vscode.",
 	"version": "1.0.0",
-	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"uiw"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/uiwjs/vscode-uiw.git"
+	},
+	"homepage": "https://github.com/uiwjs/vscode-uiw",
+	"bugs": {
+		"url": "https://github.com/uiwjs/vscode-uiw/issues"
+	},
 	"activationEvents": [
 		"onCommand:extension.uiwDocument",
 		"onCommand:extension.uiwQuickStart",
