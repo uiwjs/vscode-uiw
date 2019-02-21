@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 		openBrowsers('https://uiwjs.github.io/');
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World!');
+		vscode.window.showInformationMessage('Open uiw  Document!');
 	});
 
 	context.subscriptions.push(disposable);

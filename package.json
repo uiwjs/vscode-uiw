@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "extension.uiwDocument",
-				"title": "uiw document."
+				"title": "Open uiw document."
 			}
 		]
 	},
