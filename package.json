@@ -3,6 +3,7 @@
 	"displayName": "",
 	"description": "Preview uiw document in vscode.",
 	"version": "0.0.1",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
