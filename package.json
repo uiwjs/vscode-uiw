@@ -10,14 +10,269 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.uiwDocument"
+		"onCommand:extension.uiwDocument",
+		"onCommand:extension.uiwQuickStart",
+		"onCommand:extension.uiwCreateReactApp",
+		"onCommand:extension.uiwKKT",
+		"onCommand:extension.uiwDocs",
+		"onCommand:extension.uiwThirdParty",
+		"onCommand:extension.uiwChangelog",
+		"onCommand:extension.uiwColor",
+		"onCommand:extension.uiwAvatar",
+		"onCommand:extension.uiwAlert",
+		"onCommand:extension.uiwBadge",
+		"onCommand:extension.uiwBackTop",
+		"onCommand:extension.uiwButton",
+		"onCommand:extension.uiwButtonGroup",
+		"onCommand:extension.uiwBreadcrumb",
+		"onCommand:extension.uiwCard",
+		"onCommand:extension.uiwCol",
+		"onCommand:extension.uiwCopyToClipboard",
+		"onCommand:extension.uiwCheckbox",
+		"onCommand:extension.uiwCollapse",
+		"onCommand:extension.uiwDivider",
+		"onCommand:extension.uiwDrawer",
+		"onCommand:extension.uiwDatePicker",
+		"onCommand:extension.uiwDateInput",
+		"onCommand:extension.uiwOverlay",
+		"onCommand:extension.uiwOverlayTrigger",
+		"onCommand:extension.uiwIcon",
+		"onCommand:extension.uiwInput",
+		"onCommand:extension.uiwList",
+		"onCommand:extension.uiwMenu",
+		"onCommand:extension.uiwModal",
+		"onCommand:extension.uiwMessage",
+		"onCommand:extension.uiwMonthPicker",
+		"onCommand:extension.uiwNotify",
+		"onCommand:extension.uiwPopover",
+		"onCommand:extension.uiwProgress",
+		"onCommand:extension.uiwPortal",
+		"onCommand:extension.uiwRow",
+		"onCommand:extension.uiwRate",
+		"onCommand:extension.uiwRadio",
+		"onCommand:extension.uiwRadioGroup",
+		"onCommand:extension.uiwSelect",
+		"onCommand:extension.uiwSwitch",
+		"onCommand:extension.uiwSteps",
+		"onCommand:extension.uiwSplit",
+		"onCommand:extension.uiwTag",
+		"onCommand:extension.uiwTabs",
+		"onCommand:extension.uiwTooltip",
+		"onCommand:extension.uiwTimestamp",
+		"onCommand:extension.uiwTextarea",
+		"onCommand:extension.uiwForm",
+		"onCommand:extension.uiwFormItem"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.uiwDocument",
-				"title": "Open uiw document."
+				"title": "View uiw document."
+			},
+			{
+				"command": "extension.uiwQuickStart",
+				"title": "View uiw QuickStart document."
+			},
+			{
+				"command": "extension.uiwCreateReactApp",
+				"title": "View uiw use Create-React-App document."
+			},
+			{
+				"command": "extension.uiwKKT",
+				"title": "View uiw use KKT document."
+			},
+			{
+				"command": "extension.uiwDocs",
+				"title": "View write uiw document."
+			},
+			{
+				"command": "extension.uiwThirdParty",
+				"title": "View uiw Third-Party Libraries."
+			},
+			{
+				"command": "extension.uiwChangelog",
+				"title": "View uiw Change Log document."
+			},
+			{
+				"command": "extension.uiwColor",
+				"title": "View uiw Color document."
+			},
+			{
+				"command": "extension.uiwAvatar",
+				"title": "View uiw Avatar document."
+			},
+			{
+				"command": "extension.uiwAlert",
+				"title": "View uiw Alert document."
+			},
+			{
+				"command": "extension.uiwBadge",
+				"title": "View uiw Badge document."
+			},
+			{
+				"command": "extension.uiwBackTop",
+				"title": "View uiw BackTop document."
+			},
+			{
+				"command": "extension.uiwButton",
+				"title": "View uiw Button document."
+			},
+			{
+				"command": "extension.uiwButtonGroup",
+				"title": "View uiw ButtonGroup document."
+			},
+			{
+				"command": "extension.uiwBreadcrumb",
+				"title": "View uiw Breadcrumb document."
+			},
+			{
+				"command": "extension.uiwCard",
+				"title": "View uiw Card document."
+			},
+			{
+				"command": "extension.uiwCol",
+				"title": "View uiw Col document."
+			},
+			{
+				"command": "extension.uiwCopyToClipboard",
+				"title": "View uiw CopyToClipboard document."
+			},
+			{
+				"command": "extension.uiwCheckbox",
+				"title": "View uiw Checkbox document."
+			},
+			{
+				"command": "extension.uiwCollapse",
+				"title": "View uiw Collapse document."
+			},
+			{
+				"command": "extension.uiwDivider",
+				"title": "View uiw Divider document."
+			},
+			{
+				"command": "extension.uiwDrawer",
+				"title": "View uiw Drawer document."
+			},
+			{
+				"command": "extension.uiwDatePicker",
+				"title": "View uiw DatePicker document."
+			},
+			{
+				"command": "extension.uiwDateInput",
+				"title": "View uiw DateInput document."
+			},
+			{
+				"command": "extension.uiwOverlay",
+				"title": "View uiw Overlay document."
+			},
+			{
+				"command": "extension.uiwOverlayTrigger",
+				"title": "View uiw OverlayTrigger document."
+			},
+			{
+				"command": "extension.uiwIcon",
+				"title": "View uiw Icon document."
+			},
+			{
+				"command": "extension.uiwInput",
+				"title": "View uiw Input document."
+			},
+			{
+				"command": "extension.uiwList",
+				"title": "View uiw List document."
+			},
+			{
+				"command": "extension.uiwMenu",
+				"title": "View uiw Menu document."
+			},
+			{
+				"command": "extension.uiwModal",
+				"title": "View uiw Modal document."
+			},
+			{
+				"command": "extension.uiwMessage",
+				"title": "View uiw Message document."
+			},
+			{
+				"command": "extension.uiwMonthPicker",
+				"title": "View uiw MonthPicker document."
+			},
+			{
+				"command": "extension.uiwNotify",
+				"title": "View uiw Notify document."
+			},
+			{
+				"command": "extension.uiwPopover",
+				"title": "View uiw Popover document."
+			},
+			{
+				"command": "extension.uiwProgress",
+				"title": "View uiw Progress document."
+			},
+			{
+				"command": "extension.uiwPortal",
+				"title": "View uiw Portal document."
+			},
+			{
+				"command": "extension.uiwRow",
+				"title": "View uiw Row document."
+			},
+			{
+				"command": "extension.uiwRate",
+				"title": "View uiw Rate document."
+			},
+			{
+				"command": "extension.uiwRadio",
+				"title": "View uiw Radio document."
+			},
+			{
+				"command": "extension.uiwRadioGroup",
+				"title": "View uiw RadioGroup document."
+			},
+			{
+				"command": "extension.uiwSelect",
+				"title": "View uiw Select document."
+			},
+			{
+				"command": "extension.uiwSwitch",
+				"title": "View uiw Switch document."
+			},
+			{
+				"command": "extension.uiwSteps",
+				"title": "View uiw Steps document."
+			},
+			{
+				"command": "extension.uiwSplit",
+				"title": "View uiw Split document."
+			},
+			{
+				"command": "extension.uiwTag",
+				"title": "View uiw Tag document."
+			},
+			{
+				"command": "extension.uiwTabs",
+				"title": "View uiw Tabs document."
+			},
+			{
+				"command": "extension.uiwTooltip",
+				"title": "View uiw Tooltip document."
+			},
+			{
+				"command": "extension.uiwTimestamp",
+				"title": "View uiw Timestamp document."
+			},
+			{
+				"command": "extension.uiwTextarea",
+				"title": "View uiw Textarea document."
+			},
+			{
+				"command": "extension.uiwForm",
+				"title": "View uiw Form document."
+			},
+			{
+				"command": "extension.uiwFormItem",
+				"title": "View uiw FormItem document."
 			}
 		]
 	},
@@ -36,6 +291,11 @@
 		"@types/mocha": "^2.2.42"
 	},
 	"dependencies": {
+		"@types/fs-extra": "^5.0.5",
+		"@types/marked": "^0.6.1",
+		"axios": "^0.18.0",
+		"fs-extra": "^7.0.1",
+		"marked": "^0.6.1",
 		"open-browsers": "^1.1.1"
 	}
 }
