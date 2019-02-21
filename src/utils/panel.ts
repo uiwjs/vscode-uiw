@@ -23,7 +23,7 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
       retainContextWhenHidden: true
     }
   );
-  panel.webview.html = getLoadingHTML({ });
+  panel.webview.html = getLoadingHTML({ name });
   try {
     repath = repath ? repath : `packages/core/src/${fromCamelCase(name)}`;
     const md = await getReadme(repath);
@@ -35,6 +35,6 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
     vscode.window.showInformationMessage(`Open ${name} Document!`);
   } catch (error) {
     console.log('error:', error);
-    vscode.window.showErrorMessage(`Open ${name} Document errors!`);
+    vscode.window.showErrorMessage(`Open ${name} Document errors! ${error.message}`);
   }
 }
