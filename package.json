@@ -1,10 +1,10 @@
 {
 	"name": "uiw",
 	"displayName": "uiw document",
-	"publisher": "jaywcjlove",
+	"publisher": "uiw",
 	"icon": "images/icon.png",
 	"description": "Preview uiw document in vscode.",
-	"version": "1.0.0",
+	"version": "1.2.1",
 	"engines": {
 		"vscode": "^1.31.0"
 	},

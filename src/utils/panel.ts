@@ -11,6 +11,8 @@ const fromCamelCase = (str: string, separator = '-') => str
   .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1' + separator + '$2')
   .toLowerCase();
 
+const docPath = (path: string) => `https://raw.githubusercontent.com/uiwjs/uiw/master/${path}/README.md`;
+
 export async function webviewPanel(name: string, context: vscode.ExtensionContext, repath?: string) {
   // createWebviewPanel(
   // viewType: string, 
@@ -23,11 +25,12 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
       retainContextWhenHidden: true
     }
   );
-  panel.webview.html = getLoadingHTML({ name });
+  repath = repath ? repath : `packages/core/src/${fromCamelCase(name)}`;
+  repath = docPath(repath);
+  panel.webview.html = getLoadingHTML({ name, url: repath });
   try {
-    repath = repath ? repath : `packages/core/src/${fromCamelCase(name)}`;
     const md = await getReadme(repath);
-    const cssPath = vscode.Uri.file(path.join(context.extensionPath, 'src', 'style', 'index.css'));
+    const cssPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'index.css'));
     const cssStr = fs.readFileSync(cssPath.path);
     const mdStr = marked(md.toString());
     panel.webview.html = getWebviewContent(mdStr.toString(), cssStr.toString());

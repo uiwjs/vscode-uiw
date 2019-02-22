@@ -1,6 +1,4 @@
 
-
-
 export function getLoadingHTML(config: any) {
   return `<!DOCTYPE html>
   <html lang="en">
@@ -12,7 +10,7 @@ export function getLoadingHTML(config: any) {
   <body>
     <div class="loading-container">
       <div class="loading">
-        <h1>${config.name} Loading...</h1>
+        <h1><a href="${config.url}">${config.name}</a> Loading...</h1>
       </div>
     </div>
   </body>
