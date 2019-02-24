@@ -4,7 +4,7 @@
 	"publisher": "uiw",
 	"icon": "images/icon.png",
 	"description": "Preview uiw document in vscode.",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
@@ -81,211 +81,263 @@
 		"commands": [
 			{
 				"command": "extension.uiwDocument",
-				"title": "View uiw document."
+				"title": "View uiw document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwQuickStart",
-				"title": "View uiw QuickStart document."
+				"title": "View uiw QuickStart document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwCreateReactApp",
-				"title": "View uiw use Create-React-App document."
+				"title": "View uiw use Create-React-App document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwKKT",
-				"title": "View uiw use KKT document."
+				"title": "View uiw use KKT document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwDocs",
-				"title": "View write uiw document."
+				"title": "View write uiw document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwThirdParty",
-				"title": "View uiw Third-Party Libraries."
+				"title": "View uiw Third-Party Libraries.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwChangelog",
-				"title": "View uiw Change Log document."
+				"title": "View uiw Change Log document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwColor",
-				"title": "View uiw Color document."
+				"title": "View uiw Color document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwAvatar",
-				"title": "View uiw Avatar document."
+				"title": "View uiw Avatar document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwAlert",
-				"title": "View uiw Alert document."
+				"title": "View uiw Alert document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwBadge",
-				"title": "View uiw Badge document."
+				"title": "View uiw Badge document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwBackTop",
-				"title": "View uiw BackTop document."
+				"title": "View uiw BackTop document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwButton",
-				"title": "View uiw Button document."
+				"title": "View uiw Button document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwButtonGroup",
-				"title": "View uiw ButtonGroup document."
+				"title": "View uiw ButtonGroup document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwBreadcrumb",
-				"title": "View uiw Breadcrumb document."
+				"title": "View uiw Breadcrumb document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwCard",
-				"title": "View uiw Card document."
+				"title": "View uiw Card document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwCol",
-				"title": "View uiw Col document."
+				"title": "View uiw Col document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwCopyToClipboard",
-				"title": "View uiw CopyToClipboard document."
+				"title": "View uiw CopyToClipboard document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwCheckbox",
-				"title": "View uiw Checkbox document."
+				"title": "View uiw Checkbox document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwCollapse",
-				"title": "View uiw Collapse document."
+				"title": "View uiw Collapse document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwDivider",
-				"title": "View uiw Divider document."
+				"title": "View uiw Divider document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwDrawer",
-				"title": "View uiw Drawer document."
+				"title": "View uiw Drawer document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwDatePicker",
-				"title": "View uiw DatePicker document."
+				"title": "View uiw DatePicker document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwDateInput",
-				"title": "View uiw DateInput document."
+				"title": "View uiw DateInput document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwOverlay",
-				"title": "View uiw Overlay document."
+				"title": "View uiw Overlay document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwOverlayTrigger",
-				"title": "View uiw OverlayTrigger document."
+				"title": "View uiw OverlayTrigger document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwIcon",
-				"title": "View uiw Icon document."
+				"title": "View uiw Icon document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwInput",
-				"title": "View uiw Input document."
+				"title": "View uiw Input document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwList",
-				"title": "View uiw List document."
+				"title": "View uiw List document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwMenu",
-				"title": "View uiw Menu document."
+				"title": "View uiw Menu document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwModal",
-				"title": "View uiw Modal document."
+				"title": "View uiw Modal document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwMessage",
-				"title": "View uiw Message document."
+				"title": "View uiw Message document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwMonthPicker",
-				"title": "View uiw MonthPicker document."
+				"title": "View uiw MonthPicker document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwNotify",
-				"title": "View uiw Notify document."
+				"title": "View uiw Notify document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwPopover",
-				"title": "View uiw Popover document."
+				"title": "View uiw Popover document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwProgress",
-				"title": "View uiw Progress document."
+				"title": "View uiw Progress document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwPortal",
-				"title": "View uiw Portal document."
+				"title": "View uiw Portal document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwRow",
-				"title": "View uiw Row document."
+				"title": "View uiw Row document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwRate",
-				"title": "View uiw Rate document."
+				"title": "View uiw Rate document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwRadio",
-				"title": "View uiw Radio document."
+				"title": "View uiw Radio document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwRadioGroup",
-				"title": "View uiw RadioGroup document."
+				"title": "View uiw RadioGroup document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwSelect",
-				"title": "View uiw Select document."
+				"title": "View uiw Select document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwSwitch",
-				"title": "View uiw Switch document."
+				"title": "View uiw Switch document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwSteps",
-				"title": "View uiw Steps document."
+				"title": "View uiw Steps document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwSplit",
-				"title": "View uiw Split document."
+				"title": "View uiw Split document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwTag",
-				"title": "View uiw Tag document."
+				"title": "View uiw Tag document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwTabs",
-				"title": "View uiw Tabs document."
+				"title": "View uiw Tabs document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwTooltip",
-				"title": "View uiw Tooltip document."
+				"title": "View uiw Tooltip document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwTimestamp",
-				"title": "View uiw Timestamp document."
+				"title": "View uiw Timestamp document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwTextarea",
-				"title": "View uiw Textarea document."
+				"title": "View uiw Textarea document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwForm",
-				"title": "View uiw Form document."
+				"title": "View uiw Form document.",
+				"category": "uiw"
 			},
 			{
 				"command": "extension.uiwFormItem",
-				"title": "View uiw FormItem document."
+				"title": "View uiw FormItem document.",
+				"category": "uiw"
 			}
 		]
 	},
