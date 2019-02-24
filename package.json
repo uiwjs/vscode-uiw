@@ -72,6 +72,7 @@
 		"onCommand:extension.uiwTabs",
 		"onCommand:extension.uiwTooltip",
 		"onCommand:extension.uiwTimestamp",
+		"onCommand:extension.uiwTimePicker",
 		"onCommand:extension.uiwTextarea",
 		"onCommand:extension.uiwForm",
 		"onCommand:extension.uiwFormItem"
@@ -322,6 +323,11 @@
 			{
 				"command": "extension.uiwTimestamp",
 				"title": "View uiw Timestamp document.",
+				"category": "uiw"
+			},
+			{
+				"command": "extension.uiwTimePicker",
+				"title": "View uiw TimePicker document.",
 				"category": "uiw"
 			},
 			{
