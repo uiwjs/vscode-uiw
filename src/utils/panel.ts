@@ -8,10 +8,14 @@ import { getLoadingHTML } from './tempHTML';
 import { getWebviewContent } from './mdHTML';
 import { fromCamelCase } from './index';
 
+require('prismjs/components/prism-tsx.js');
+require('prismjs/components/prism-jsx.js');
+require('prismjs/components/prism-bash.js');
+
 marked.setOptions({
   highlight: (code, lang) => {
-    if(/^(jsx)/.test(lang)) {
-      lang = 'js';
+    if (!lang) {
+      lang = 'bash';
     }
     return Prism.highlight(code, Prism.languages[lang]);
   }
@@ -40,12 +44,11 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
     const lightPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-prismjs.css'));
     const cssStr = `${fs.readFileSync(stylePath.path)}\n${fs.readFileSync(lightPath.path)}`;
     const mdStr = marked(md.toString());
-    console.log('mdStr:', mdStr);
     panel.webview.html = getWebviewContent(mdStr.toString(), cssStr);
     // Display a message box to the user
     vscode.window.showInformationMessage(`Open ${name} Document!`);
   } catch (error) {
-    console.log('error:', error);
+    // console.log('error:', error);
     vscode.window.showErrorMessage(`Open ${name} Document errors! ${error.message}`);
   }
 }
