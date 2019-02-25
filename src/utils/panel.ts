@@ -9,6 +9,7 @@ import { getWebviewContent } from './mdHTML';
 import { fromCamelCase } from './index';
 
 require('prismjs/components/prism-tsx.js');
+require('prismjs/components/prism-less.js');
 require('prismjs/components/prism-jsx.js');
 require('prismjs/components/prism-bash.js');
 
