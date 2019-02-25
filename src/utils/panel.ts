@@ -2,14 +2,20 @@ import * as vscode from 'vscode';
 import * as fs from 'fs-extra';
 import * as path from 'path';
 import * as marked from 'marked';
+import * as Prism from 'prismjs';
 import { getReadme } from '../api';
 import { getLoadingHTML } from './tempHTML';
 import { getWebviewContent } from './mdHTML';
+import { fromCamelCase } from './index';
 
-const fromCamelCase = (str: string, separator = '-') => str
-  .replace(/([a-z\d])([A-Z])/g, '$1' + separator + '$2')
-  .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, '$1' + separator + '$2')
-  .toLowerCase();
+marked.setOptions({
+  highlight: (code, lang) => {
+    if(/^(jsx)/.test(lang)) {
+      lang = 'js';
+    }
+    return Prism.highlight(code, Prism.languages[lang]);
+  }
+});
 
 const docPath = (path: string) => `https://raw.githubusercontent.com/uiwjs/uiw/master/${path}/README.md`;
 
@@ -30,10 +36,12 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
   panel.webview.html = getLoadingHTML({ name, url: repath });
   try {
     const md = await getReadme(repath);
-    const cssPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'index.css'));
-    const cssStr = fs.readFileSync(cssPath.path);
+    const stylePath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-light.css'));
+    const lightPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-prismjs.css'));
+    const cssStr = `${fs.readFileSync(stylePath.path)}\n${fs.readFileSync(lightPath.path)}`;
     const mdStr = marked(md.toString());
-    panel.webview.html = getWebviewContent(mdStr.toString(), cssStr.toString());
+    console.log('mdStr:', mdStr);
+    panel.webview.html = getWebviewContent(mdStr.toString(), cssStr);
     // Display a message box to the user
     vscode.window.showInformationMessage(`Open ${name} Document!`);
   } catch (error) {

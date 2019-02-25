@@ -364,9 +364,11 @@
 	"dependencies": {
 		"@types/fs-extra": "^5.0.5",
 		"@types/marked": "^0.6.1",
+		"@types/prismjs": "^1.9.1",
 		"axios": "^0.18.0",
 		"fs-extra": "^7.0.1",
 		"marked": "^0.6.1",
-		"open-browsers": "^1.1.1"
+		"open-browsers": "^1.1.1",
+		"prismjs": "^1.15.0"
 	}
 }
