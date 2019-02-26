@@ -75,6 +75,7 @@
 		"onCommand:extension.uiwTimePicker",
 		"onCommand:extension.uiwTextarea",
 		"onCommand:extension.uiwForm",
+		"onCommand:extension.uiwFileInput",
 		"onCommand:extension.uiwFormItem"
 	],
 	"main": "./out/extension.js",
@@ -338,6 +339,11 @@
 			{
 				"command": "extension.uiwForm",
 				"title": "View uiw Form document.",
+				"category": "uiw"
+			},
+			{
+				"command": "extension.uiwFileInput",
+				"title": "View uiw FileInput document.",
 				"category": "uiw"
 			},
 			{

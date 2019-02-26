@@ -65,6 +65,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTimePicker', () => webviewPanel('TimePicker', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTextarea', () => webviewPanel('Textarea', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwForm', () => webviewPanel('Form', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwFileInput', () => webviewPanel('FileInput', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwFormItem', () => webviewPanel('FormItem', context)));
 }
 
