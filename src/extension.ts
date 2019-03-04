@@ -60,6 +60,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwSplit', () => webviewPanel('Split', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTag', () => webviewPanel('Tag', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTabs', () => webviewPanel('Tabs', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTable', () => webviewPanel('Table', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTooltip', () => webviewPanel('Tooltip', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTimestamp', () => webviewPanel('Timestamp', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwTimePicker', () => webviewPanel('TimePicker', context)));
