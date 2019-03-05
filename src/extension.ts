@@ -23,6 +23,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwAvatar', () => webviewPanel('Avatar', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwAlert', () => webviewPanel('Alert', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwAffix', () => webviewPanel('Affix', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwBadge', () => webviewPanel('Badge', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwBackTop', () => webviewPanel('BackTop', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwButton', () => webviewPanel('Button', context)));

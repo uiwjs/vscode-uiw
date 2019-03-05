@@ -4,7 +4,7 @@
 	"publisher": "uiw",
 	"icon": "images/icon.png",
 	"description": "Preview uiw document in vscode.",
-	"version": "1.2.10",
+	"version": "1.2.11",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
@@ -32,6 +32,7 @@
 		"onCommand:extension.uiwChangelog",
 		"onCommand:extension.uiwColor",
 		"onCommand:extension.uiwAvatar",
+		"onCommand:extension.uiwAffix",
 		"onCommand:extension.uiwAlert",
 		"onCommand:extension.uiwBadge",
 		"onCommand:extension.uiwBackTop",
@@ -130,6 +131,11 @@
 			{
 				"command": "extension.uiwAlert",
 				"title": "View uiw Alert document.",
+				"category": "uiw"
+			},
+			{
+				"command": "extension.uiwAffix",
+				"title": "View uiw Affix document.",
 				"category": "uiw"
 			},
 			{
