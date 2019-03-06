@@ -4,7 +4,7 @@
 	"publisher": "uiw",
 	"icon": "images/icon.png",
 	"description": "Preview uiw document in vscode.",
-	"version": "1.2.11",
+	"version": "1.2.12",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
@@ -46,6 +46,7 @@
 		"onCommand:extension.uiwCollapse",
 		"onCommand:extension.uiwDivider",
 		"onCommand:extension.uiwDrawer",
+		"onCommand:extension.uiwDropdown",
 		"onCommand:extension.uiwDatePicker",
 		"onCommand:extension.uiwDateInput",
 		"onCommand:extension.uiwOverlay",
@@ -196,6 +197,11 @@
 			{
 				"command": "extension.uiwDrawer",
 				"title": "View uiw Drawer document.",
+				"category": "uiw"
+			},
+			{
+				"command": "extension.uiwDropdown",
+				"title": "View uiw Dropdown document.",
 				"category": "uiw"
 			},
 			{

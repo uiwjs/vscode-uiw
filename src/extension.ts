@@ -36,6 +36,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwCollapse', () => webviewPanel('Collapse', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwDivider', () => webviewPanel('Divider', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwDrawer', () => webviewPanel('Drawer', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwDropdown', () => webviewPanel('Dropdown', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwDatePicker', () => webviewPanel('DatePicker', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwDateInput', () => webviewPanel('DateInput', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('extension.uiwOverlay', () => webviewPanel('Overlay', context)));
