@@ -23,353 +23,389 @@
 		"url": "https://github.com/uiwjs/vscode-uiw/issues"
 	},
 	"activationEvents": [
-		"onCommand:extension.uiwDocument",
-		"onCommand:extension.uiwQuickStart",
-		"onCommand:extension.uiwCreateReactApp",
-		"onCommand:extension.uiwKKT",
-		"onCommand:extension.uiwDocs",
-		"onCommand:extension.uiwThirdParty",
-		"onCommand:extension.uiwChangelog",
-		"onCommand:extension.uiwColor",
-		"onCommand:extension.uiwAvatar",
-		"onCommand:extension.uiwAffix",
-		"onCommand:extension.uiwAlert",
-		"onCommand:extension.uiwBadge",
-		"onCommand:extension.uiwBackTop",
-		"onCommand:extension.uiwButton",
-		"onCommand:extension.uiwButtonGroup",
-		"onCommand:extension.uiwBreadcrumb",
-		"onCommand:extension.uiwCard",
-		"onCommand:extension.uiwCol",
-		"onCommand:extension.uiwCopyToClipboard",
-		"onCommand:extension.uiwCheckbox",
-		"onCommand:extension.uiwCollapse",
-		"onCommand:extension.uiwDivider",
-		"onCommand:extension.uiwDrawer",
-		"onCommand:extension.uiwDropdown",
-		"onCommand:extension.uiwDatePicker",
-		"onCommand:extension.uiwDateInput",
-		"onCommand:extension.uiwOverlay",
-		"onCommand:extension.uiwOverlayTrigger",
-		"onCommand:extension.uiwIcon",
-		"onCommand:extension.uiwInput",
-		"onCommand:extension.uiwList",
-		"onCommand:extension.uiwMenu",
-		"onCommand:extension.uiwModal",
-		"onCommand:extension.uiwMessage",
-		"onCommand:extension.uiwMonthPicker",
-		"onCommand:extension.uiwNotify",
-		"onCommand:extension.uiwPopover",
-		"onCommand:extension.uiwProgress",
-		"onCommand:extension.uiwPortal",
-		"onCommand:extension.uiwRow",
-		"onCommand:extension.uiwRate",
-		"onCommand:extension.uiwRadio",
-		"onCommand:extension.uiwRadioGroup",
-		"onCommand:extension.uiwSelect",
-		"onCommand:extension.uiwSwitch",
-		"onCommand:extension.uiwSteps",
-		"onCommand:extension.uiwSplit",
-		"onCommand:extension.uiwTag",
-		"onCommand:extension.uiwTabs",
-		"onCommand:extension.uiwTable",
-		"onCommand:extension.uiwTooltip",
-		"onCommand:extension.uiwTimestamp",
-		"onCommand:extension.uiwTimePicker",
-		"onCommand:extension.uiwTextarea",
-		"onCommand:extension.uiwForm",
-		"onCommand:extension.uiwFileInput",
-		"onCommand:extension.uiwFormItem"
+		"onView:uiw.view.ecosystem",
+		"onCommand:uiw.cmd.ecoRefreshNode",
+		"onCommand:uiw.cmd.Document",
+		"onCommand:uiw.cmd.QuickStart",
+		"onCommand:uiw.cmd.CreateReactApp",
+		"onCommand:uiw.cmd.KKT",
+		"onCommand:uiw.cmd.Docs",
+		"onCommand:uiw.cmd.ThirdParty",
+		"onCommand:uiw.cmd.Changelog",
+		"onCommand:uiw.cmd.Color",
+		"onCommand:uiw.cmd.Avatar",
+		"onCommand:uiw.cmd.Affix",
+		"onCommand:uiw.cmd.Alert",
+		"onCommand:uiw.cmd.Badge",
+		"onCommand:uiw.cmd.BackTop",
+		"onCommand:uiw.cmd.Button",
+		"onCommand:uiw.cmd.ButtonGroup",
+		"onCommand:uiw.cmd.Breadcrumb",
+		"onCommand:uiw.cmd.Card",
+		"onCommand:uiw.cmd.Col",
+		"onCommand:uiw.cmd.CopyToClipboard",
+		"onCommand:uiw.cmd.Checkbox",
+		"onCommand:uiw.cmd.Collapse",
+		"onCommand:uiw.cmd.Divider",
+		"onCommand:uiw.cmd.Drawer",
+		"onCommand:uiw.cmd.Dropdown",
+		"onCommand:uiw.cmd.DatePicker",
+		"onCommand:uiw.cmd.DateInput",
+		"onCommand:uiw.cmd.Overlay",
+		"onCommand:uiw.cmd.OverlayTrigger",
+		"onCommand:uiw.cmd.Icon",
+		"onCommand:uiw.cmd.Input",
+		"onCommand:uiw.cmd.List",
+		"onCommand:uiw.cmd.Menu",
+		"onCommand:uiw.cmd.Modal",
+		"onCommand:uiw.cmd.Message",
+		"onCommand:uiw.cmd.MonthPicker",
+		"onCommand:uiw.cmd.Notify",
+		"onCommand:uiw.cmd.Popover",
+		"onCommand:uiw.cmd.Progress",
+		"onCommand:uiw.cmd.Portal",
+		"onCommand:uiw.cmd.Row",
+		"onCommand:uiw.cmd.Rate",
+		"onCommand:uiw.cmd.Radio",
+		"onCommand:uiw.cmd.RadioGroup",
+		"onCommand:uiw.cmd.Select",
+		"onCommand:uiw.cmd.Switch",
+		"onCommand:uiw.cmd.Steps",
+		"onCommand:uiw.cmd.Split",
+		"onCommand:uiw.cmd.Tag",
+		"onCommand:uiw.cmd.Tabs",
+		"onCommand:uiw.cmd.Table",
+		"onCommand:uiw.cmd.Tooltip",
+		"onCommand:uiw.cmd.Timestamp",
+		"onCommand:uiw.cmd.TimePicker",
+		"onCommand:uiw.cmd.Textarea",
+		"onCommand:uiw.cmd.Form",
+		"onCommand:uiw.cmd.FileInput",
+		"onCommand:uiw.cmd.FormItem"
 	],
-	"main": "./out/extension.js",
+	"main": "./out/index.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.uiwDocument",
+				"command": "uiw.cmd.ecoRefreshNode",
+				"title": "uiw refresh node.",
+				"icon": {
+					"light": "./assets/light/refresh.svg",
+					"dark": "./assets/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "uiw.cmd.Document",
 				"title": "View uiw document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwQuickStart",
+				"command": "uiw.cmd.QuickStart",
 				"title": "View uiw QuickStart document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwCreateReactApp",
+				"command": "uiw.cmd.CreateReactApp",
 				"title": "View uiw use Create-React-App document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwKKT",
+				"command": "uiw.cmd.KKT",
 				"title": "View uiw use KKT document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwDocs",
+				"command": "uiw.cmd.Docs",
 				"title": "View write uiw document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwThirdParty",
+				"command": "uiw.cmd.ThirdParty",
 				"title": "View uiw Third-Party Libraries.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwChangelog",
+				"command": "uiw.cmd.Changelog",
 				"title": "View uiw Change Log document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwColor",
+				"command": "uiw.cmd.Color",
 				"title": "View uiw Color document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwAvatar",
+				"command": "uiw.cmd.Avatar",
 				"title": "View uiw Avatar document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwAlert",
+				"command": "uiw.cmd.Alert",
 				"title": "View uiw Alert document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwAffix",
+				"command": "uiw.cmd.Affix",
 				"title": "View uiw Affix document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwBadge",
+				"command": "uiw.cmd.Badge",
 				"title": "View uiw Badge document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwBackTop",
+				"command": "uiw.cmd.BackTop",
 				"title": "View uiw BackTop document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwButton",
+				"command": "uiw.cmd.Button",
 				"title": "View uiw Button document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwButtonGroup",
+				"command": "uiw.cmd.ButtonGroup",
 				"title": "View uiw ButtonGroup document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwBreadcrumb",
+				"command": "uiw.cmd.Breadcrumb",
 				"title": "View uiw Breadcrumb document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwCard",
+				"command": "uiw.cmd.Card",
 				"title": "View uiw Card document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwCol",
+				"command": "uiw.cmd.Col",
 				"title": "View uiw Col document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwCopyToClipboard",
+				"command": "uiw.cmd.CopyToClipboard",
 				"title": "View uiw CopyToClipboard document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwCheckbox",
+				"command": "uiw.cmd.Checkbox",
 				"title": "View uiw Checkbox document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwCollapse",
+				"command": "uiw.cmd.Collapse",
 				"title": "View uiw Collapse document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwDivider",
+				"command": "uiw.cmd.Divider",
 				"title": "View uiw Divider document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwDrawer",
+				"command": "uiw.cmd.Drawer",
 				"title": "View uiw Drawer document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwDropdown",
+				"command": "uiw.cmd.Dropdown",
 				"title": "View uiw Dropdown document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwDatePicker",
+				"command": "uiw.cmd.DatePicker",
 				"title": "View uiw DatePicker document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwDateInput",
+				"command": "uiw.cmd.DateInput",
 				"title": "View uiw DateInput document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwOverlay",
+				"command": "uiw.cmd.Overlay",
 				"title": "View uiw Overlay document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwOverlayTrigger",
+				"command": "uiw.cmd.OverlayTrigger",
 				"title": "View uiw OverlayTrigger document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwIcon",
+				"command": "uiw.cmd.Icon",
 				"title": "View uiw Icon document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwInput",
+				"command": "uiw.cmd.Input",
 				"title": "View uiw Input document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwList",
+				"command": "uiw.cmd.List",
 				"title": "View uiw List document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwMenu",
+				"command": "uiw.cmd.Menu",
 				"title": "View uiw Menu document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwModal",
+				"command": "uiw.cmd.Modal",
 				"title": "View uiw Modal document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwMessage",
+				"command": "uiw.cmd.Message",
 				"title": "View uiw Message document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwMonthPicker",
+				"command": "uiw.cmd.MonthPicker",
 				"title": "View uiw MonthPicker document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwNotify",
+				"command": "uiw.cmd.Notify",
 				"title": "View uiw Notify document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwPopover",
+				"command": "uiw.cmd.Popover",
 				"title": "View uiw Popover document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwProgress",
+				"command": "uiw.cmd.Progress",
 				"title": "View uiw Progress document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwPortal",
+				"command": "uiw.cmd.Portal",
 				"title": "View uiw Portal document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwRow",
+				"command": "uiw.cmd.Row",
 				"title": "View uiw Row document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwRate",
+				"command": "uiw.cmd.Rate",
 				"title": "View uiw Rate document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwRadio",
+				"command": "uiw.cmd.Radio",
 				"title": "View uiw Radio document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwRadioGroup",
+				"command": "uiw.cmd.RadioGroup",
 				"title": "View uiw RadioGroup document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwSelect",
+				"command": "uiw.cmd.Select",
 				"title": "View uiw Select document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwSwitch",
+				"command": "uiw.cmd.Switch",
 				"title": "View uiw Switch document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwSteps",
+				"command": "uiw.cmd.Steps",
 				"title": "View uiw Steps document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwSplit",
+				"command": "uiw.cmd.Split",
 				"title": "View uiw Split document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTag",
+				"command": "uiw.cmd.Tag",
 				"title": "View uiw Tag document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTabs",
+				"command": "uiw.cmd.Tabs",
 				"title": "View uiw Tabs document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTable",
+				"command": "uiw.cmd.Table",
 				"title": "View uiw Table document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTooltip",
+				"command": "uiw.cmd.Tooltip",
 				"title": "View uiw Tooltip document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTimestamp",
+				"command": "uiw.cmd.Timestamp",
 				"title": "View uiw Timestamp document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTimePicker",
+				"command": "uiw.cmd.TimePicker",
 				"title": "View uiw TimePicker document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwTextarea",
+				"command": "uiw.cmd.Textarea",
 				"title": "View uiw Textarea document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwForm",
+				"command": "uiw.cmd.Form",
 				"title": "View uiw Form document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwFileInput",
+				"command": "uiw.cmd.FileInput",
 				"title": "View uiw FileInput document.",
 				"category": "uiw"
 			},
 			{
-				"command": "extension.uiwFormItem",
+				"command": "uiw.cmd.FormItem",
 				"title": "View uiw FormItem document.",
 				"category": "uiw"
 			}
-		]
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "uiw-views",
+					"title": "uiw",
+					"icon": "./assets/uiw-logo-50-40-28.svg"
+				}
+			]
+		},
+		"views": {
+			"uiw-views": [
+				{
+					"id": "uiw.view.ecosystem",
+					"name": "component"
+				}
+			]
+		},
+		"menus": {
+			"view/item/context": [
+				{
+					"command": "uiw.cmd.ecoRefreshNode",
+					"when": "view == uiw.view.ecosystem",
+					"group": "inline"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
