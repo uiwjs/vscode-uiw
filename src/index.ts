@@ -2,21 +2,31 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { webviewPanel } from './utils/panel';
+import { commandHelp } from './command';
+import { Menu } from './menu';
+import { ext } from './extensionVariables';
 
 const openBrowsers = require('open-browsers');
 // decide what os should be used
 // possible node values 'darwin', 'freebsd', 'linux', 'sunos' or 'win32'
 // const platform = process.platform;
 
-const menu = require('./menu'); 
+// const menu = require('./menu'); 
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export async function activate(context: vscode.ExtensionContext) {
-	const uiwProvider = new menu.Menu(context);
+	// const uiwProvider = new menu.Menu(context);
 	console.log('Congratulations, your extension "vscode-uiw" is now active!');
 
-	context.subscriptions.push(vscode.window.createTreeView('uiw.view.ecosystem', { treeDataProvider: uiwProvider, showCollapseAll: true }));
+	ext.Menu = new Menu();
+	vscode.window.registerTreeDataProvider(
+		'uiw.view.ecosystem',
+		ext.Menu
+	);
+
+	// context.subscriptions.push(vscode.window.createTreeView('uiw.view.ecosystem', { treeDataProvider: uiwProvider, showCollapseAll: true }));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.help', commandHelp));  //"omi.cmd.help"命令注册
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Document', () => openBrowsers('https://uiwjs.github.io/')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.QuickStart', () => webviewPanel('QuickStart', context, 'src/routes/guide/quick-start')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.CreateReactApp', () => webviewPanel('CreateReactApp', context, 'src/routes/guide/create-react-app')));

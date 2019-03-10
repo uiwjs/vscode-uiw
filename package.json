@@ -2,7 +2,7 @@
 	"name": "uiw",
 	"displayName": "uiw document",
 	"publisher": "uiw",
-	"icon": "images/icon.png",
+	"icon": "assets/icon.png",
 	"description": "Preview uiw document in vscode.",
 	"version": "1.2.12",
 	"engines": {
@@ -24,6 +24,7 @@
 	},
 	"activationEvents": [
 		"onView:uiw.view.ecosystem",
+		"onCommand:uiw.cmd.help",
 		"onCommand:uiw.cmd.ecoRefreshNode",
 		"onCommand:uiw.cmd.Document",
 		"onCommand:uiw.cmd.QuickStart",
@@ -89,15 +90,25 @@
 			{
 				"command": "uiw.cmd.ecoRefreshNode",
 				"title": "uiw refresh node.",
+				"category": "uiw",
 				"icon": {
 					"light": "./assets/light/refresh.svg",
 					"dark": "./assets/dark/refresh.svg"
 				}
 			},
 			{
+				"command": "uiw.cmd.help",
+				"title": "uiw help",
+				"category": "uiw"
+			},
+			{
 				"command": "uiw.cmd.Document",
 				"title": "View uiw document.",
-				"category": "uiw"
+				"category": "uiw",
+				"icon": {
+					"light": "./assets/uiw-set.svg",
+					"dark": "./assets/uiw-set.svg"
+				}
 			},
 			{
 				"command": "uiw.cmd.QuickStart",
@@ -398,6 +409,25 @@
 			]
 		},
 		"menus": {
+			"editor/context": [
+				{
+					"command": "uiw.cmd.help",
+					"when": "editorFocus",
+					"group": "navigation"
+				}
+			],
+			"view/title": [
+				{
+					"command": "uiw.cmd.ecoRefreshNode",
+					"when": "view == uiw.view.ecosystem",
+					"group": "navigation@2"
+				},
+				{
+					"command": "uiw.cmd.Document",
+					"when": "view == uiw.view.ecosystem",
+					"group": "navigation@1"
+				}
+			],
 			"view/item/context": [
 				{
 					"command": "uiw.cmd.ecoRefreshNode",
@@ -407,6 +437,14 @@
 			]
 		}
 	},
+	"keybindings": [
+		{
+			"command": "uiw.cmd.help",
+			"key": "ctrl+f10",
+			"mac": "cmd+f10",
+			"when": "editorTextFocus"
+		}
+	],
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
@@ -421,7 +459,7 @@
 		"@types/node": "^10.12.21",
 		"@types/prismjs": "^1.9.1",
 		"tslint": "^5.12.1",
-		"typescript": "^3.3.1",
+		"typescript": "^3.3.3333",
 		"vscode": "^1.1.28"
 	},
 	"dependencies": {

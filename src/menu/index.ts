@@ -1,18 +1,39 @@
 import * as vscode from 'vscode';
+import { NodeBase } from './nodeBase';
+import { RootNode } from './RootNode';
+import { getComponetMenus } from '../utils/uiwHubUtils';
+import { TreeMenu } from '../extensionVariables';
 
-class Menu {
-  context: vscode.ExtensionContext;
-  constructor(context: vscode.ExtensionContext) {
-    this.context = context;
+export class Menu implements vscode.TreeDataProvider<NodeBase>{
+  private _onDidChangeTreeData: vscode.EventEmitter<NodeBase> = new vscode.EventEmitter<NodeBase>();
+  public readonly onDidChangeTreeData: vscode.Event<NodeBase> = this._onDidChangeTreeData.event;
+  public getTreeItem(element: NodeBase): vscode.TreeItem | Thenable<vscode.TreeItem> {
+    return element.getTreeItem();
   }
-  /**
-   * 菜单树数据写入入口
-   * @声明标识符 async 标识符标识当前函数是异步执行函数
-   * @param element 菜单中单击选中的节点文本
-   */
-  async getChildren(element: string) {
-    console.log('element:', element);
+  public async getChildren(element?: NodeBase): Promise<NodeBase[]> {
+    if (!element) {
+      const menus = await getComponetMenus();
+      return this.getRootNodes(menus);
+    }
+    if (element.label && element.label.children && element.label.children.length > 0) {
+      return this.getRootNodes(element.label.children);
+    }
+    return element.getChildren(element);
+  }
+
+  public refresh(): void {
+    console.log('~~~refresh');
+  }
+
+  private async getRootNodes(menus: TreeMenu[] ): Promise<RootNode[]> {
+    const rootNodes: RootNode[] = [];
+    let node: RootNode;
+
+    menus.forEach((item) => {
+      node = new RootNode(item, 'dirRootNode', this._onDidChangeTreeData);
+      rootNodes.push(node);
+    });
+    
+    return rootNodes;
   }
 }
-
-exports.Menu = Menu;
