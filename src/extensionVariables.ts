@@ -6,7 +6,7 @@ export interface TreeMenu {
   path?: string;
   icon?: string;
   divider?: boolean;
-  children?: Array<TreeMenu>;
+  children?: Array<TreeMenu> | undefined;
   name: string;
 }
 /**

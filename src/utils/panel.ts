@@ -40,6 +40,7 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
   repath = docPath(repath);
   panel.webview.html = getLoadingHTML({ name, url: repath });
   try {
+    console.log('repath:', repath);
     const md = await getReadme(repath);
     const stylePath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-light.css'));
     const lightPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-prismjs.css'));
@@ -47,9 +48,8 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
     const mdStr = marked(md.toString());
     panel.webview.html = getWebviewContent(mdStr.toString(), cssStr);
     // Display a message box to the user
-    vscode.window.showInformationMessage(`Open ${name} Document!`);
+    // vscode.window.showInformationMessage(`Open ${name} Document!`);
   } catch (error) {
-    // console.log('error:', error);
     vscode.window.showErrorMessage(`Open ${name} Document errors! ${error.message}`);
   }
 }

@@ -28,13 +28,17 @@ export async function activate(context: vscode.ExtensionContext) {
 	// context.subscriptions.push(vscode.window.createTreeView('uiw.view.ecosystem', { treeDataProvider: uiwProvider, showCollapseAll: true }));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.help', commandHelp));  //"omi.cmd.help"命令注册
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Document', () => openBrowsers('https://uiwjs.github.io/')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.issue', () => openBrowsers('https://github.com/uiwjs/uiw/issues/new')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.github', () => openBrowsers('https://github.com/uiwjs/uiw')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.gitee', () => openBrowsers('https://gitee.com/uiw/uiw')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.QuickStart', () => webviewPanel('QuickStart', context, 'src/routes/guide/quick-start')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.CreateReactApp', () => webviewPanel('CreateReactApp', context, 'src/routes/guide/create-react-app')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.KKT', () => webviewPanel('KKT', context, 'src/routes/guide/kkt')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Kkt', () => webviewPanel('KKT', context, 'src/routes/guide/kkt')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Docs', () => webviewPanel('Write', context, 'src/routes/guide/docs')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.ThirdParty', () => webviewPanel('uiwThirdParty', context, 'src/routes/guide/recommendation')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Changelog', () => webviewPanel('uiwChangelog', context, 'src/routes/guide/changelog')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Color', () => webviewPanel('Color', context, 'src/routes/components/colors')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Recommendation', () => webviewPanel('Third Party', context, 'src/routes/guide/recommendation')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Changelog', () => webviewPanel('Changelog', context, 'src/routes/guide/changelog')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Colors', () => webviewPanel('Colors', context, 'src/routes/components/colors')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.ResetCss', () => webviewPanel('Reset CSS', context, 'src/routes/components/reset-css')));
 
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Avatar', () => webviewPanel('Avatar', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Alert', () => webviewPanel('Alert', context)));
@@ -49,11 +53,13 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.CopyToClipboard', () => webviewPanel('CopyToClipboard', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Checkbox', () => webviewPanel('Checkbox', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Collapse', () => webviewPanel('Collapse', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Calendar', () => webviewPanel('Calendar', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Divider', () => webviewPanel('Divider', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Drawer', () => webviewPanel('Drawer', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Dropdown', () => webviewPanel('Dropdown', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.DatePicker', () => webviewPanel('DatePicker', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.DateInput', () => webviewPanel('DateInput', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Grid', () => webviewPanel('Grid', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Overlay', () => webviewPanel('Overlay', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.OverlayTrigger', () => webviewPanel('OverlayTrigger', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Icon', () => webviewPanel('Icon', context)));
@@ -73,6 +79,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.RadioGroup', () => webviewPanel('Radio', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Select', () => webviewPanel('Select', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Switch', () => webviewPanel('Switch', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Slider', () => webviewPanel('Slider', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Steps', () => webviewPanel('Steps', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Split', () => webviewPanel('Split', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tag', () => webviewPanel('Tag', context)));

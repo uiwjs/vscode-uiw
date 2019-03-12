@@ -102,6 +102,11 @@
 				"category": "uiw"
 			},
 			{
+				"command": "uiw.cmd.Issue",
+				"title": "uiw issue",
+				"category": "uiw"
+			},
+			{
 				"command": "uiw.cmd.Document",
 				"title": "View uiw document.",
 				"category": "uiw",
@@ -121,7 +126,7 @@
 				"category": "uiw"
 			},
 			{
-				"command": "uiw.cmd.KKT",
+				"command": "uiw.cmd.Kkt",
 				"title": "View uiw use KKT document.",
 				"category": "uiw"
 			},
@@ -141,8 +146,8 @@
 				"category": "uiw"
 			},
 			{
-				"command": "uiw.cmd.Color",
-				"title": "View uiw Color document.",
+				"command": "uiw.cmd.Colors",
+				"title": "View uiw Colors document.",
 				"category": "uiw"
 			},
 			{
@@ -211,6 +216,11 @@
 				"category": "uiw"
 			},
 			{
+				"command": "uiw.cmd.Calendar",
+				"title": "View uiw Calendar document.",
+				"category": "uiw"
+			},
+			{
 				"command": "uiw.cmd.Divider",
 				"title": "View uiw Divider document.",
 				"category": "uiw"
@@ -233,6 +243,11 @@
 			{
 				"command": "uiw.cmd.DateInput",
 				"title": "View uiw DateInput document.",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Grid",
+				"title": "View uiw Grid document.",
 				"category": "uiw"
 			},
 			{
@@ -328,6 +343,11 @@
 			{
 				"command": "uiw.cmd.Switch",
 				"title": "View uiw Switch document.",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Slider",
+				"title": "View uiw Slider document.",
 				"category": "uiw"
 			},
 			{

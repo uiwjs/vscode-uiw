@@ -13,6 +13,33 @@ export class Menu implements vscode.TreeDataProvider<NodeBase>{
   public async getChildren(element?: NodeBase): Promise<NodeBase[]> {
     if (!element) {
       const menus = await getComponetMenus();
+      for (let item of menus) {
+        if (item.children) {
+          let menuItems!: TreeMenu[];
+          let num = 0;
+          if (!menuItems) {
+            menuItems = [];
+          }
+          for (let i = 0; i < item.children.length; i++) {
+            if (num === 0 && !item.children[i].divider) {
+              menuItems.push(item.children[i]);
+            } else if (item.children[i].divider && !item.children[i].children) {
+              num += 1;
+              item.children[i].children = [];
+              menuItems.push(item.children[i]);
+            } else {
+              const itemInner = menuItems[num] || menuItems[num-1];
+              if (itemInner && itemInner.children) {
+                const tt = itemInner.children;
+                if (tt) {
+                  tt.push(item.children[i]);
+                }
+              }
+            }
+          }
+          item.children = menuItems;
+        }
+      }
       return this.getRootNodes(menus);
     }
     if (element.label && element.label.children && element.label.children.length > 0) {
