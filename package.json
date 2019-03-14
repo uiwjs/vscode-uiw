@@ -64,6 +64,7 @@
 		"onCommand:uiw.cmd.Notify",
 		"onCommand:uiw.cmd.Popover",
 		"onCommand:uiw.cmd.Progress",
+		"onCommand:uiw.cmd.Pagination",
 		"onCommand:uiw.cmd.Portal",
 		"onCommand:uiw.cmd.Row",
 		"onCommand:uiw.cmd.Rate",
@@ -308,6 +309,11 @@
 			{
 				"command": "uiw.cmd.Progress",
 				"title": "View uiw Progress document.",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Pagination",
+				"title": "View uiw Pagination document.",
 				"category": "uiw"
 			},
 			{

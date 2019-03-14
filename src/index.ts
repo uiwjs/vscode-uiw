@@ -72,6 +72,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Notify', () => webviewPanel('Notify', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Popover', () => webviewPanel('Popover', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Progress', () => webviewPanel('Progress', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Pagination', () => webviewPanel('Pagination', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Portal', () => webviewPanel('Portal', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Row', () => webviewPanel('Row', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Rate', () => webviewPanel('Rate', context)));
