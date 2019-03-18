@@ -23,6 +23,7 @@ marked.setOptions({
 });
 
 const docPath = (path: string) => `https://raw.githubusercontent.com/uiwjs/uiw/master/${path}/README.md`;
+const websitePath = (path: string) => path.replace('src/routes', 'https://uiwjs.github.io/#');
 
 export async function webviewPanel(name: string, context: vscode.ExtensionContext, repath?: string) {
   // createWebviewPanel(
@@ -37,16 +38,16 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
     }
   );
   repath = repath ? repath : `packages/core/src/${fromCamelCase(name)}`;
+  const websiteurl = websitePath(repath);
   repath = docPath(repath);
   panel.webview.html = getLoadingHTML({ name, url: repath });
   try {
-    console.log('repath:', repath);
     const md = await getReadme(repath);
     const stylePath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-light.css'));
     const lightPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-prismjs.css'));
     const cssStr = `${fs.readFileSync(stylePath.path)}\n${fs.readFileSync(lightPath.path)}`;
     const mdStr = marked(md.toString());
-    panel.webview.html = getWebviewContent(mdStr.toString(), cssStr);
+    panel.webview.html = getWebviewContent(mdStr.toString(), cssStr, websiteurl);
     // Display a message box to the user
     // vscode.window.showInformationMessage(`Open ${name} Document!`);
   } catch (error) {
