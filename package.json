@@ -4,7 +4,7 @@
 	"publisher": "uiw",
 	"icon": "assets/icon.png",
 	"description": "Preview uiw document in vscode.",
-	"version": "1.2.14",
+	"version": "1.2.15",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
