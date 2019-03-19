@@ -84,6 +84,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Steps', () => webviewPanel('Steps', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Split', () => webviewPanel('Split', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tag', () => webviewPanel('Tag', context)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tree', () => webviewPanel('Tree', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tabs', () => webviewPanel('Tabs', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Table', () => webviewPanel('Table', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tooltip', () => webviewPanel('Tooltip', context)));

@@ -75,6 +75,7 @@
 		"onCommand:uiw.cmd.Steps",
 		"onCommand:uiw.cmd.Split",
 		"onCommand:uiw.cmd.Tag",
+		"onCommand:uiw.cmd.Tree",
 		"onCommand:uiw.cmd.Tabs",
 		"onCommand:uiw.cmd.Table",
 		"onCommand:uiw.cmd.Tooltip",
@@ -369,6 +370,11 @@
 			{
 				"command": "uiw.cmd.Tag",
 				"title": "View uiw Tag document.",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Tree",
+				"title": "View uiw Tree document.",
 				"category": "uiw"
 			},
 			{
