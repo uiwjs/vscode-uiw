@@ -9,6 +9,7 @@
 		"vscode": "^1.31.0"
 	},
 	"categories": [
+		"Snippets",
 		"Other"
 	],
 	"keywords": [
@@ -467,7 +468,21 @@
 					"group": "inline"
 				}
 			]
-		}
+		},
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/react.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/react.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/react.json"
+			}
+		]
 	},
 	"keybindings": [
 		{

@@ -1,0 +1,79 @@
+{
+  "react": {
+    "prefix": "react",
+    "description": "react-template",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "export default class ${1} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        ${2}",
+      "      </div>",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  "uiw": {
+    "prefix": "react",
+    "description": "uiw react template",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { ${1} } from 'uiw';",
+      "",
+      "export default class ${2} extends Component {",
+      "  render() {",
+      "    return (",
+      "      <div>",
+      "        ${3}",
+      "      </div>",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  "Affix": {
+    "prefix": "Affix",
+    "description": "Affix Component",
+    "body": "<Affix>${1}</Affix>"
+  },
+  "Alert": {
+    "prefix": "Alert",
+    "description": "Alert Component",
+    "body": [
+      "<Alert",
+      "  isOpen={${1}}",
+      "  confirmText=\"${2}\"",
+      "  onClosed={${3}}",
+      "  content=\"${4}\"",
+      "/>"
+    ]
+  },
+  "Avatar": {
+    "prefix": "Avatar",
+    "description": "Avatar Component",
+    "body": "<Avatar icon=\"${1}\" />"
+  },
+  "BackTop": {
+    "prefix": "BackTop",
+    "description": "BackTop Component",
+    "body": [
+      "<BackTop",
+      "  step={500}",
+      "  speed={10}",
+      "  content={${1}}",
+      "/>"
+    ]
+  },
+  "Badge": {
+    "prefix": "Badge",
+    "description": "Badge Component",
+    "body": [
+      "<Badge count={99}>",
+      "  ${1}",
+      "</Badge>"
+    ]
+  }
+}
