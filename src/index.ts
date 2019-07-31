@@ -31,14 +31,14 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.issue', () => openBrowsers('https://github.com/uiwjs/uiw/issues/new')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.github', () => openBrowsers('https://github.com/uiwjs/uiw')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.gitee', () => openBrowsers('https://gitee.com/uiw/uiw')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.QuickStart', () => webviewPanel('QuickStart', context, 'src/routes/guide/quick-start')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.CreateReactApp', () => webviewPanel('CreateReactApp', context, 'src/routes/guide/create-react-app')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Kkt', () => webviewPanel('KKT', context, 'src/routes/guide/kkt')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Docs', () => webviewPanel('Write', context, 'src/routes/guide/docs')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Recommendation', () => webviewPanel('Third Party', context, 'src/routes/guide/recommendation')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Changelog', () => webviewPanel('Changelog', context, 'src/routes/guide/changelog')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Colors', () => webviewPanel('Colors', context, 'src/routes/components/colors')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.ResetCss', () => webviewPanel('Reset CSS', context, 'src/routes/components/reset-css')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.QuickStart', () => webviewPanel('QuickStart', context, 'src/routes/guide/quick-start', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.CreateReactApp', () => webviewPanel('CreateReactApp', context, 'src/routes/guide/create-react-app', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Kkt', () => webviewPanel('KKT', context, 'src/routes/guide/kkt', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Docs', () => webviewPanel('Write', context, 'src/routes/guide/docs', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Recommendation', () => webviewPanel('Third Party', context, 'src/routes/guide/recommendation', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Changelog', () => webviewPanel('Changelog', context, 'src/routes/guide/changelog', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Colors', () => webviewPanel('Colors', context, 'src/routes/components/colors', true)));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.ResetCss', () => webviewPanel('Reset CSS', context, 'src/routes/components/reset-css', true)));
 
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Avatar', () => webviewPanel('Avatar', context)));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Alert', () => webviewPanel('Alert', context)));

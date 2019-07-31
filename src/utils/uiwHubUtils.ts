@@ -6,7 +6,7 @@ export async function getComponetMenus(): Promise<TreeMenu[]> {
   // https://github.com/Microsoft/TypeScript/issues/29684
   let tree !: TreeMenu[];
   try {
-    const { data } = <AxiosResponse>await axios.get('https://raw.githubusercontent.com/uiwjs/uiw/master/src/common/menu.json');
+    const { data } = <AxiosResponse>await axios.get('https://raw.githubusercontent.com/uiwjs/uiwjs.github.io/dev/src/common/menu.json');
     if (data) {
       tree = data;
     }

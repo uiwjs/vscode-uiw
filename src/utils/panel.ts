@@ -23,9 +23,10 @@ marked.setOptions({
 });
 
 const docPath = (path: string) => `https://raw.githubusercontent.com/uiwjs/uiw/master/${path}/README.md`;
+const docWebPath = (path: string) => `https://raw.githubusercontent.com/uiwjs/uiwjs.github.io/dev/${path}/README.md`;
 const websitePath = (path: string) => path.replace('src/routes', 'https://uiwjs.github.io/#');
 
-export async function webviewPanel(name: string, context: vscode.ExtensionContext, repath?: string) {
+export async function webviewPanel(name: string, context: vscode.ExtensionContext, repath?: string, isDocWeb?: boolean) {
   // createWebviewPanel(
   // viewType: string, 
   // title: string, 
@@ -37,12 +38,16 @@ export async function webviewPanel(name: string, context: vscode.ExtensionContex
       retainContextWhenHidden: true
     }
   );
-  repath = repath ? repath : `packages/core/src/${fromCamelCase(name)}`;
+  repath = repath ? repath : `src/${fromCamelCase(name)}`;
   const websiteurl = websitePath(repath);
-  repath = docPath(repath);
+  if (isDocWeb) {
+    repath = docWebPath(repath);
+  } else {
+    repath = docPath(repath);
+  }
   panel.webview.html = getLoadingHTML({ name, url: repath });
   try {
-    const md = await getReadme(repath);
+    const md: any = await getReadme(repath);
     const stylePath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-light.css'));
     const lightPath = vscode.Uri.file(path.join(context.extensionPath, 'style', 'github-prismjs.css'));
     const cssStr = `${fs.readFileSync(stylePath.path)}\n${fs.readFileSync(lightPath.path)}`;
