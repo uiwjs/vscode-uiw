@@ -514,6 +514,6 @@
 		"fs-extra": "^7.0.1",
 		"marked": "^0.7.0",
 		"open-browsers": "^1.1.1",
-		"prismjs": "^1.15.0"
+		"prismjs": "^1.21.0"
 	}
 }
