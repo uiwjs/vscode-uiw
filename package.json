@@ -500,14 +500,14 @@
 		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"@types/fs-extra": "^5.0.5",
-		"@types/marked": "^0.6.1",
-		"@types/mocha": "^2.2.42",
-		"@types/node": "^10.12.21",
-		"@types/prismjs": "^1.9.1",
-		"tslint": "^5.12.1",
-		"typescript": "^3.3.3333",
-		"vscode": "^1.1.35"
+		"@types/fs-extra": "5.0.5",
+		"@types/marked": "0.6.1",
+		"@types/mocha": "2.2.48",
+		"@types/node": "10.12.26",
+		"@types/prismjs": "1.9.1",
+		"tslint": "5.12.1",
+		"typescript": "3.3.3333",
+		"vscode": "1.1.35"
 	},
 	"dependencies": {
 		"axios": "^0.18.1",
