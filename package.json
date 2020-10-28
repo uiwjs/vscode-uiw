@@ -510,7 +510,7 @@
 		"vscode": "1.1.35"
 	},
 	"dependencies": {
-		"axios": "^0.18.1",
+		"axios": "^0.21.0",
 		"fs-extra": "^7.0.1",
 		"marked": "^0.7.0",
 		"open-browsers": "^1.1.1",
