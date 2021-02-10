@@ -501,7 +501,7 @@
 	},
 	"devDependencies": {
 		"@types/fs-extra": "5.0.5",
-		"@types/marked": "0.6.1",
+		"@types/marked": "1.2.2",
 		"@types/mocha": "2.2.48",
 		"@types/node": "10.12.26",
 		"@types/prismjs": "1.9.1",
