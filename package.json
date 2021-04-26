@@ -501,7 +501,7 @@
 	},
 	"devDependencies": {
 		"@types/fs-extra": "5.0.5",
-		"@types/marked": "0.6.1",
+		"@types/marked": "2.0.2",
 		"@types/mocha": "2.2.48",
 		"@types/node": "10.12.26",
 		"@types/prismjs": "1.9.1",
@@ -512,7 +512,7 @@
 	"dependencies": {
 		"axios": "^0.18.1",
 		"fs-extra": "^7.0.1",
-		"marked": "^0.7.0",
+		"marked": "^2.0.0",
 		"open-browsers": "^1.1.1",
 		"prismjs": "^1.21.0"
 	}
