@@ -504,7 +504,7 @@
 		"@types/marked": "0.6.1",
 		"@types/mocha": "2.2.48",
 		"@types/node": "10.12.26",
-		"@types/prismjs": "1.9.1",
+		"@types/prismjs": "1.16.5",
 		"tslint": "5.12.1",
 		"typescript": "3.3.3333",
 		"vscode": "1.1.35"
