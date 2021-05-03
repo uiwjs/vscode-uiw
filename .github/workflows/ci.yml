@@ -17,7 +17,7 @@ jobs:
 
       - run: npm install
       - run: npm run build
-
+      - run: mv uiw-* uiw.vsix
 
       - name: Create Tag
         id: create_tag
@@ -50,12 +50,3 @@ jobs:
             ${{ steps.changelog.outputs.changelog }}
           draft: false
           prerelease: false
-
-      - name: upload
-        uses: softprops/action-gh-release@v1
-        if: steps.create_tag.outputs.successful
-        with:
-          files: |
-            uiw-${{steps.create_tag.outputs.versionNumber}}.vsix
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
