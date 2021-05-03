@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import { NodeBase } from './nodeBase';
-import { RootNode } from './RootNode';
+import RootNode from './RootNode';
 import { getComponetMenus } from '../utils/uiwHubUtils';
 import { TreeMenu } from '../extensionVariables';
 

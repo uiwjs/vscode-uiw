@@ -7,7 +7,7 @@ function toFirstUpperCase(str: string) {
   return str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase());
 }  
 
-export class RootNode extends NodeBase {
+export default class RootNode extends NodeBase {
   submen: TreeMenu[] | undefined;
   constructor(
     public readonly label: TreeMenu,
