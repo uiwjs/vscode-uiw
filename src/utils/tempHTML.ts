@@ -1,4 +1,3 @@
-
 export function getLoadingHTML(config: any) {
   return `<!DOCTYPE html>
   <html lang="en">

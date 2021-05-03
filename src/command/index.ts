@@ -1,5 +1,5 @@
-import * as vscode from 'vscode';
+import { window } from 'vscode';
 
 export function commandHelp() {
-  vscode.window.showInformationMessage('Hi uiw.');
+  window.showInformationMessage('Hi uiw.');
 }

@@ -1,39 +1,31 @@
-
-export function getWebviewContent(mdStr: string, style: string, websiteurl: string) {
+export function reloadHTML() {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat Coding</title>
-<style type="text/css">
-${style}
-.openWebsite {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.openWebsite a {
-  display: inline-block;
-  border-radius: 3px;
-  background-color: #008EF0;
-  color: #fff;
-  line-height: 14px;
-  font-size: 14px;
-  cursor: pointer;
-  padding: 5px 7px;
-}
-.openWebsite a:hover {
-  color: #fff;
-  background-color: #0070bd;
-}
-</style>
+  <title>UIW Document</title>
 </head>
 <body>
-<div class="openWebsite"><a href="${websiteurl}">组件文档官网地址</a></div>
-<div class="markdown-body">
-${mdStr}
-<div>
+  <div>
+    正在加载中....
+  <div>
+</body>
+</html>`;
+}
+
+export function reloadErrorHTML() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIW Document</title>
+</head>
+<body>
+  <div>
+    请求加载错误❌
+  <div>
 </body>
 </html>`;
 }

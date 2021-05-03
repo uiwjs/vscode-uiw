@@ -24,68 +24,7 @@
 		"url": "https://github.com/uiwjs/vscode-uiw/issues"
 	},
 	"activationEvents": [
-		"onView:uiw.view.ecosystem",
-		"onCommand:uiw.cmd.help",
-		"onCommand:uiw.cmd.ecoRefreshNode",
-		"onCommand:uiw.cmd.Document",
-		"onCommand:uiw.cmd.QuickStart",
-		"onCommand:uiw.cmd.CreateReactApp",
-		"onCommand:uiw.cmd.KKT",
-		"onCommand:uiw.cmd.Docs",
-		"onCommand:uiw.cmd.ThirdParty",
-		"onCommand:uiw.cmd.Changelog",
-		"onCommand:uiw.cmd.Color",
-		"onCommand:uiw.cmd.Avatar",
-		"onCommand:uiw.cmd.Affix",
-		"onCommand:uiw.cmd.Alert",
-		"onCommand:uiw.cmd.Badge",
-		"onCommand:uiw.cmd.BackTop",
-		"onCommand:uiw.cmd.Button",
-		"onCommand:uiw.cmd.ButtonGroup",
-		"onCommand:uiw.cmd.Breadcrumb",
-		"onCommand:uiw.cmd.Card",
-		"onCommand:uiw.cmd.Col",
-		"onCommand:uiw.cmd.CopyToClipboard",
-		"onCommand:uiw.cmd.Checkbox",
-		"onCommand:uiw.cmd.Collapse",
-		"onCommand:uiw.cmd.Divider",
-		"onCommand:uiw.cmd.Drawer",
-		"onCommand:uiw.cmd.Dropdown",
-		"onCommand:uiw.cmd.DatePicker",
-		"onCommand:uiw.cmd.DateInput",
-		"onCommand:uiw.cmd.Overlay",
-		"onCommand:uiw.cmd.OverlayTrigger",
-		"onCommand:uiw.cmd.Icon",
-		"onCommand:uiw.cmd.Input",
-		"onCommand:uiw.cmd.List",
-		"onCommand:uiw.cmd.Menu",
-		"onCommand:uiw.cmd.Modal",
-		"onCommand:uiw.cmd.Message",
-		"onCommand:uiw.cmd.MonthPicker",
-		"onCommand:uiw.cmd.Notify",
-		"onCommand:uiw.cmd.Popover",
-		"onCommand:uiw.cmd.Progress",
-		"onCommand:uiw.cmd.Pagination",
-		"onCommand:uiw.cmd.Portal",
-		"onCommand:uiw.cmd.Row",
-		"onCommand:uiw.cmd.Rate",
-		"onCommand:uiw.cmd.Radio",
-		"onCommand:uiw.cmd.RadioGroup",
-		"onCommand:uiw.cmd.Select",
-		"onCommand:uiw.cmd.Switch",
-		"onCommand:uiw.cmd.Steps",
-		"onCommand:uiw.cmd.Split",
-		"onCommand:uiw.cmd.Tag",
-		"onCommand:uiw.cmd.Tree",
-		"onCommand:uiw.cmd.Tabs",
-		"onCommand:uiw.cmd.Table",
-		"onCommand:uiw.cmd.Tooltip",
-		"onCommand:uiw.cmd.Timestamp",
-		"onCommand:uiw.cmd.TimePicker",
-		"onCommand:uiw.cmd.Textarea",
-		"onCommand:uiw.cmd.Form",
-		"onCommand:uiw.cmd.FileInput",
-		"onCommand:uiw.cmd.FormItem"
+		"*"
 	],
 	"main": "./out/index.js",
 	"contributes": {
@@ -119,6 +58,16 @@
 				}
 			},
 			{
+				"command": "uiw.cmd.github",
+				"title": "uiw github",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.gitee",
+				"title": "uiw gitee",
+				"category": "uiw"
+			},
+			{
 				"command": "uiw.cmd.QuickStart",
 				"title": "View uiw QuickStart document.",
 				"category": "uiw"
@@ -131,6 +80,16 @@
 			{
 				"command": "uiw.cmd.Kkt",
 				"title": "View uiw use KKT document.",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Import",
+				"title": "按需加载。",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Vscode",
+				"title": "VSCode Plugins.",
 				"category": "uiw"
 			},
 			{
@@ -154,273 +113,293 @@
 				"category": "uiw"
 			},
 			{
-				"command": "uiw.cmd.Avatar",
-				"title": "View uiw Avatar document.",
+				"command": "uiw.cmd.ResetCss",
+				"title": "View uiw Reset CSS document.",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Alert",
-				"title": "View uiw Alert document.",
+				"title": "View uiw Alert document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Affix",
-				"title": "View uiw Affix document.",
+				"title": "View uiw Affix document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.AutoLink",
+				"title": "View uiw AutoLink document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Badge",
-				"title": "View uiw Badge document.",
+				"title": "View uiw Badge document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.BackTop",
-				"title": "View uiw BackTop document.",
+				"title": "View uiw BackTop document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Button",
-				"title": "View uiw Button document.",
+				"title": "View uiw Button document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.ButtonGroup",
-				"title": "View uiw ButtonGroup document.",
+				"title": "View uiw ButtonGroup document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Breadcrumb",
-				"title": "View uiw Breadcrumb document.",
+				"title": "View uiw Breadcrumb document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Card",
-				"title": "View uiw Card document.",
-				"category": "uiw"
-			},
-			{
-				"command": "uiw.cmd.Col",
-				"title": "View uiw Col document.",
+				"title": "View uiw Card document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.CopyToClipboard",
-				"title": "View uiw CopyToClipboard document.",
+				"title": "View uiw CopyToClipboard document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Checkbox",
-				"title": "View uiw Checkbox document.",
+				"title": "View uiw Checkbox document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Collapse",
-				"title": "View uiw Collapse document.",
+				"title": "View uiw Collapse document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Calendar",
-				"title": "View uiw Calendar document.",
+				"title": "View uiw Calendar document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Divider",
-				"title": "View uiw Divider document.",
+				"title": "View uiw Divider document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Descriptions",
+				"title": "View uiw Descriptions document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Drawer",
-				"title": "View uiw Drawer document.",
+				"title": "View uiw Drawer document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Dropdown",
-				"title": "View uiw Dropdown document.",
+				"title": "View uiw Dropdown document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.DatePicker",
-				"title": "View uiw DatePicker document.",
+				"title": "View uiw DatePicker document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.DateInput",
-				"title": "View uiw DateInput document.",
+				"title": "View uiw DateInput document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Grid",
-				"title": "View uiw Grid document.",
+				"title": "View uiw Grid document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Overlay",
-				"title": "View uiw Overlay document.",
+				"title": "View uiw Overlay document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.OverlayTrigger",
-				"title": "View uiw OverlayTrigger document.",
+				"title": "View uiw OverlayTrigger document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Icon",
-				"title": "View uiw Icon document.",
+				"title": "View uiw Icon document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Input",
-				"title": "View uiw Input document.",
+				"title": "View uiw Input document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Layout",
+				"title": "View uiw Layout document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.List",
-				"title": "View uiw List document.",
+				"title": "View uiw List document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Loader",
+				"title": "View uiw Loader document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Menu",
-				"title": "View uiw Menu document.",
+				"title": "View uiw Menu document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Modal",
-				"title": "View uiw Modal document.",
+				"title": "View uiw Modal document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Message",
-				"title": "View uiw Message document.",
+				"title": "View uiw Message document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.MonthPicker",
-				"title": "View uiw MonthPicker document.",
+				"title": "View uiw MonthPicker document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Notify",
-				"title": "View uiw Notify document.",
+				"title": "View uiw Notify document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Popover",
-				"title": "View uiw Popover document.",
+				"title": "View uiw Popover document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Progress",
-				"title": "View uiw Progress document.",
+				"title": "View uiw Progress document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Pagination",
-				"title": "View uiw Pagination document.",
+				"title": "View uiw Pagination document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Portal",
-				"title": "View uiw Portal document.",
+				"title": "View uiw Portal document",
 				"category": "uiw"
 			},
 			{
-				"command": "uiw.cmd.Row",
-				"title": "View uiw Row document.",
+				"command": "uiw.cmd.PinCode",
+				"title": "View uiw PinCode document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Rate",
-				"title": "View uiw Rate document.",
+				"title": "View uiw Rate document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Radio",
-				"title": "View uiw Radio document.",
+				"title": "View uiw Radio document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.RadioGroup",
-				"title": "View uiw RadioGroup document.",
+				"title": "View uiw RadioGroup document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Select",
-				"title": "View uiw Select document.",
+				"title": "View uiw Select document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.SearchSelect",
+				"title": "View uiw SearchSelect document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Switch",
-				"title": "View uiw Switch document.",
+				"title": "View uiw Switch document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Slider",
-				"title": "View uiw Slider document.",
+				"title": "View uiw Slider document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Steps",
-				"title": "View uiw Steps document.",
+				"title": "View uiw Steps document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Split",
-				"title": "View uiw Split document.",
+				"title": "View uiw Split document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Tag",
-				"title": "View uiw Tag document.",
+				"title": "View uiw Tag document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Tree",
-				"title": "View uiw Tree document.",
+				"title": "View uiw Tree document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.TreeChecked",
+				"title": "View uiw TreeChecked document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Tabs",
-				"title": "View uiw Tabs document.",
+				"title": "View uiw Tabs document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Table",
-				"title": "View uiw Table document.",
+				"title": "View uiw Table document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Tooltip",
-				"title": "View uiw Tooltip document.",
-				"category": "uiw"
-			},
-			{
-				"command": "uiw.cmd.Timestamp",
-				"title": "View uiw Timestamp document.",
+				"title": "View uiw Tooltip document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.TimePicker",
-				"title": "View uiw TimePicker document.",
+				"title": "View uiw TimePicker document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Textarea",
-				"title": "View uiw Textarea document.",
+				"title": "View uiw Textarea document",
+				"category": "uiw"
+			},
+			{
+				"command": "uiw.cmd.Formatter",
+				"title": "View uiw formatter document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.Form",
-				"title": "View uiw Form document.",
+				"title": "View uiw Form document",
 				"category": "uiw"
 			},
 			{
 				"command": "uiw.cmd.FileInput",
-				"title": "View uiw FileInput document.",
-				"category": "uiw"
-			},
-			{
-				"command": "uiw.cmd.FormItem",
-				"title": "View uiw FormItem document.",
+				"title": "View uiw FileInput document",
 				"category": "uiw"
 			}
 		],
@@ -429,7 +408,7 @@
 				{
 					"id": "uiw-views",
 					"title": "uiw",
-					"icon": "./assets/uiw-logo-50-40-28.svg"
+					"icon": "./assets/logo.svg"
 				}
 			]
 		},
@@ -462,11 +441,6 @@
 				}
 			],
 			"view/item/context": [
-				{
-					"command": "uiw.cmd.ecoRefreshNode",
-					"when": "view == uiw.view.ecosystem",
-					"group": "inline"
-				}
 			]
 		},
 		"snippets": [
@@ -495,25 +469,23 @@
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+		"watch": "tsc -watch -p ./"
 	},
 	"devDependencies": {
-		"@types/fs-extra": "5.0.5",
-		"@types/marked": "0.6.1",
-		"@types/mocha": "2.2.48",
-		"@types/node": "10.12.26",
-		"@types/prismjs": "1.9.1",
-		"tslint": "5.12.1",
-		"typescript": "3.3.3333",
-		"vscode": "1.1.35"
+		"@types/fs-extra": "9.0.11",
+		"@types/marked": "2.0.2",
+		"@types/mocha": "8.2.2",
+		"@types/node": "15.0.1",
+		"@types/prismjs": "1.16.5",
+		"@types/vscode": "^1.47.0",
+		"tslint": "6.1.3",
+		"typescript": "4.2.4"
 	},
 	"dependencies": {
-		"axios": "^0.18.1",
-		"fs-extra": "^7.0.1",
-		"marked": "^0.7.0",
-		"open-browsers": "^1.1.1",
-		"prismjs": "^1.21.0"
+		"axios": "^0.21.1",
+		"fs-extra": "^9.1.0",
+		"marked": "^2.0.3",
+		"open-browsers": "^1.2.2",
+		"prismjs": "^1.23.0"
 	}
 }
