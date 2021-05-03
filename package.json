@@ -4,9 +4,9 @@
 	"publisher": "uiw",
 	"icon": "assets/icon.png",
 	"description": "Preview uiw document in vscode.",
-	"version": "1.2.18",
+	"version": "1.3.0",
 	"engines": {
-		"vscode": "^1.31.0"
+		"vscode": "^1.55.0"
 	},
 	"categories": [
 		"Snippets",
@@ -440,8 +440,7 @@
 					"group": "navigation@1"
 				}
 			],
-			"view/item/context": [
-			]
+			"view/item/context": []
 		},
 		"snippets": [
 			{
@@ -479,6 +478,7 @@
 		"@types/prismjs": "1.16.5",
 		"@types/vscode": "1.55.0",
 		"tslint": "6.1.3",
+		"vsce": "1.88.0",
 		"typescript": "4.2.4"
 	},
 	"dependencies": {
