@@ -46,8 +46,8 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Extensions', () => UIWDocumentPanel.show(context.extensionUri, 'Docs', 'website/uiw/src/routes/extensions')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Recommendation', () => UIWDocumentPanel.show(context.extensionUri, 'Third Party', 'website/uiw/src/routes/guide/recommendation')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Changelog', () => openBrowsers('https://github.com/uiwjs/uiw/releases')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Colors', () => UIWDocumentPanel.show(context.extensionUri, 'Colors', 'website/uiw/src/routes/guide/colors')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.ResetCss', () => UIWDocumentPanel.show(context.extensionUri, 'Reset CSS', 'website/uiw/src/routes/guide/reset-css')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Colors', () => UIWDocumentPanel.show(context.extensionUri, 'Colors', 'src/routes/components/colors')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.ResetCss', () => UIWDocumentPanel.show(context.extensionUri, 'Reset CSS', 'https://raw.githubusercontent.com/uiwjs/reset-css/master/README.md')));
 	
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Avatar', () => UIWDocumentPanel.show(context.extensionUri, 'Avatar', 'packages/react-affix')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Alert', () => UIWDocumentPanel.show(context.extensionUri, 'Alert', 'packages/react-alert')));
@@ -95,7 +95,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Switch', () => UIWDocumentPanel.show(context.extensionUri, 'Switch', 'packages/react-switch')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Slider', () => UIWDocumentPanel.show(context.extensionUri, 'Slider', 'packages/react-slider')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Steps', () => UIWDocumentPanel.show(context.extensionUri, 'Steps', 'packages/react-steps')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Split', () => openBrowsers('https://github.com/uiwjs/react-split')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Split', () =>UIWDocumentPanel.show(context.extensionUri, 'Steps', 'https://raw.githubusercontent.com/uiwjs/react-split/master/README.md')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tag', () => UIWDocumentPanel.show(context.extensionUri, 'Tag', 'packages/react-tag')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tree', () => UIWDocumentPanel.show(context.extensionUri, 'Tree', 'packages/react-tree')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.TreeChecked', () => UIWDocumentPanel.show(context.extensionUri, 'TreeChecked', 'packages/react-tree-checked')));
@@ -104,7 +104,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Tooltip', () => UIWDocumentPanel.show(context.extensionUri, 'Tooltip', 'packages/react-tooltip')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.TimePicker', () => UIWDocumentPanel.show(context.extensionUri, 'TimePicker', 'packages/react-time-picker')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Textarea', () => UIWDocumentPanel.show(context.extensionUri, 'Textarea', 'packages/react-textarea')));
-	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Formatter', () => openBrowsers('https://github.com/uiwjs/date-formatter')));
+	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Formatter', () => UIWDocumentPanel.show(context.extensionUri, 'Reset CSS', 'https://raw.githubusercontent.com/uiwjs/date-formatter/master/README.md')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.Form', () => UIWDocumentPanel.show(context.extensionUri, 'Form', 'packages/react-form')));
 	context.subscriptions.push(vscode.commands.registerCommand('uiw.cmd.FileInput', () => UIWDocumentPanel.show(context.extensionUri, 'FileInput', 'packages/react-file-input')));
 }

@@ -22,8 +22,8 @@ marked.setOptions({
   }
 });
 
-const docPath = (path: string) => `https://raw.githubusercontent.com/uiwjs/uiw/master/${path}/README.md`;
-const docGithubPath = (path: string) => `https://github.com/uiwjs/uiw/tree/master/${path}/README.md`;
+const docPath = (path: string) => /^(http(?:|s)\:)\//.test(path) ? path : `https://raw.githubusercontent.com/uiwjs/uiw/master/${path}/README.md`;
+const docGithubPath = (path: string) => /^(http(?:|s)\:)\//.test(path) ? path : `https://github.com/uiwjs/uiw/tree/master/${path}/README.md`;
 
 type HtmlForWebviewOption = {
   webview: vscode.Webview
@@ -49,7 +49,6 @@ export class UIWDocumentPanel {
 		);
     try {
       panel.webview.html = reloadHTML()
-      console.log(docPath(url))
       const mdStr = await getReadme(docPath(url))
       const mdToHTML = marked.parse(mdStr.toString());
       panel.webview.html = this._getHtmlForWebview({
