@@ -484,7 +484,7 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
-		"fs-extra": "^9.1.0",
+		"fs-extra": "^10.0.0",
 		"marked": "^2.0.3",
 		"open-browsers": "^1.2.2",
 		"prismjs": "^1.23.0"
