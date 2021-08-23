@@ -473,7 +473,7 @@
 	},
 	"devDependencies": {
 		"@types/fs-extra": "9.0.11",
-		"@types/marked": "2.0.2",
+		"@types/marked": "2.0.5",
 		"@types/mocha": "8.2.2",
 		"@types/node": "15.0.1",
 		"@types/prismjs": "1.16.5",
