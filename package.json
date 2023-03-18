@@ -480,7 +480,7 @@
 		"@types/vscode": "1.55.0",
 		"tslint": "6.1.3",
 		"vsce": "1.88.0",
-		"typescript": "4.2.4"
+		"typescript": "4.9.5"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
